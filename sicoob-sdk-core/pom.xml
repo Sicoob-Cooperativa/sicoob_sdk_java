@@ -1,9 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>br.com.sicoob.sdk</groupId>
+    <groupId>io.github.sicoob-cooperativa</groupId>
     <artifactId>sicoob-sdk-parent</artifactId>
     <version>2.0.0</version>
   </parent>
@@ -12,57 +12,57 @@
 
   <dependencies>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-auth</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-cobrancav3</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-conta-corrente</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-convenio-pagamentos</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-investimentos</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-openfinance-consentimento</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-pagamentos-pix</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-pagamentosv3</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-pix</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-poupanca-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>br.com.sicoob.sdk</groupId>
+      <groupId>io.github.sicoob-cooperativa</groupId>
       <artifactId>sicoob-sdk-spb-transferencias</artifactId>
       <version>${project.version}</version>
     </dependency>
