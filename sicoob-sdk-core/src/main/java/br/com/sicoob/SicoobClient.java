@@ -55,7 +55,7 @@ public class SicoobClient {
         this(clientId, pfxPath, pfxPassword, false);
     }
 
-    public SicoobClient(String clientId, String pfxPath, String pfxPassword, boolean isSandbox) throws Exception {
+    public SicoobClient(String clientId, String pfxPath, String pfxPassword, boolean isSandbox) throws Exception {       
         this.clientId = clientId;
         this.pfxPath = pfxPath;
         this.pfxPassword = pfxPassword;
