@@ -141,7 +141,7 @@ public class ValorDaCobranARecorrente1 {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ValorDaCobranARecorrente1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ValorDaCobranARecorrente1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ValorDaCobranARecorrente1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -153,7 +153,7 @@ public class ValorDaCobranARecorrente1 {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("original").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
       }
   }
 

@@ -228,7 +228,7 @@ public class HistRicoDeStatusInner1 {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!HistRicoDeStatusInner1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistRicoDeStatusInner1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistRicoDeStatusInner1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -240,7 +240,7 @@ public class HistRicoDeStatusInner1 {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("status").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
       // validate the required field `status`
       StatusEnum.validateJsonElement(jsonObj.get("status"));

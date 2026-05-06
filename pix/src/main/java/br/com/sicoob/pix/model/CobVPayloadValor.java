@@ -271,7 +271,7 @@ public class CobVPayloadValor {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CobVPayloadValor.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobVPayloadValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobVPayloadValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -283,22 +283,22 @@ public class CobVPayloadValor {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("original") != null && !jsonObj.get("original").isJsonNull()) && !jsonObj.get("original").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
       }
       if ((jsonObj.get("multa") != null && !jsonObj.get("multa").isJsonNull()) && !jsonObj.get("multa").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `multa` to be a primitive type in the JSON string but got `%s`", jsonObj.get("multa").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `multa` to be a primitive type in the JSON string but got `%s`", jsonObj.get("multa").toString()));
       }
       if ((jsonObj.get("juros") != null && !jsonObj.get("juros").isJsonNull()) && !jsonObj.get("juros").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `juros` to be a primitive type in the JSON string but got `%s`", jsonObj.get("juros").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `juros` to be a primitive type in the JSON string but got `%s`", jsonObj.get("juros").toString()));
       }
       if ((jsonObj.get("abatimento") != null && !jsonObj.get("abatimento").isJsonNull()) && !jsonObj.get("abatimento").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `abatimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("abatimento").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `abatimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("abatimento").toString()));
       }
       if ((jsonObj.get("desconto") != null && !jsonObj.get("desconto").isJsonNull()) && !jsonObj.get("desconto").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `desconto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("desconto").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `desconto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("desconto").toString()));
       }
       if (!jsonObj.get("final").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `final` to be a primitive type in the JSON string but got `%s`", jsonObj.get("final").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `final` to be a primitive type in the JSON string but got `%s`", jsonObj.get("final").toString()));
       }
   }
 

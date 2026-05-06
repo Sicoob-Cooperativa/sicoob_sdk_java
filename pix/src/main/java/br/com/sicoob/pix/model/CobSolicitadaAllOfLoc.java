@@ -142,7 +142,7 @@ public class CobSolicitadaAllOfLoc {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CobSolicitadaAllOfLoc.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobSolicitadaAllOfLoc` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobSolicitadaAllOfLoc` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 

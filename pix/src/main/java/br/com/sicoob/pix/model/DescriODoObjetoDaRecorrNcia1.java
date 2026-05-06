@@ -194,7 +194,7 @@ public class DescriODoObjetoDaRecorrNcia1 {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!DescriODoObjetoDaRecorrNcia1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescriODoObjetoDaRecorrNcia1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescriODoObjetoDaRecorrNcia1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -206,12 +206,12 @@ public class DescriODoObjetoDaRecorrNcia1 {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("objeto") != null && !jsonObj.get("objeto").isJsonNull()) && !jsonObj.get("objeto").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `objeto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("objeto").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `objeto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("objeto").toString()));
       }
       // validate the required field `devedor`
       DescriODoObjetoDaRecorrNciaDevedor.validateJsonElement(jsonObj.get("devedor"));
       if (!jsonObj.get("contrato").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `contrato` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contrato").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `contrato` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contrato").toString()));
       }
   }
 

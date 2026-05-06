@@ -167,15 +167,15 @@ public class RecorrenciaBaseValor {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RecorrenciaBaseValor.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaBaseValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaBaseValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("valorRec") != null && !jsonObj.get("valorRec").isJsonNull()) && !jsonObj.get("valorRec").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorRec").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorRec").toString()));
       }
       if ((jsonObj.get("valorMinimoRecebedor") != null && !jsonObj.get("valorMinimoRecebedor").isJsonNull()) && !jsonObj.get("valorMinimoRecebedor").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorMinimoRecebedor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorMinimoRecebedor").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorMinimoRecebedor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorMinimoRecebedor").toString()));
       }
   }
 

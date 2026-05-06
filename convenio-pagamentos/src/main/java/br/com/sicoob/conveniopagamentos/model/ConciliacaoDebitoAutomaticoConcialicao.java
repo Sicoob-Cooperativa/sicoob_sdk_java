@@ -258,7 +258,7 @@ public class ConciliacaoDebitoAutomaticoConcialicao {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ConciliacaoDebitoAutomaticoConcialicao.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ConciliacaoDebitoAutomaticoConcialicao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ConciliacaoDebitoAutomaticoConcialicao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -267,7 +267,7 @@ public class ConciliacaoDebitoAutomaticoConcialicao {
         if (jsonArrayconcialicaoDetalhada != null) {
           // ensure the json data is an array
           if (!jsonObj.get("concialicaoDetalhada").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `concialicaoDetalhada` to be an array in the JSON string but got `%s`", jsonObj.get("concialicaoDetalhada").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `concialicaoDetalhada` to be an array in the JSON string but got `%s`", jsonObj.get("concialicaoDetalhada").toString()));
           }
 
           // validate the optional field `concialicaoDetalhada` (array)

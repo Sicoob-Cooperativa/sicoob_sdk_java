@@ -354,7 +354,7 @@ public class HistoricoResultado {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!HistoricoResultado.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistoricoResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistoricoResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -367,7 +367,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosB != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosB").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosB` to be an array in the JSON string but got `%s`", jsonObj.get("registrosB").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosB` to be an array in the JSON string but got `%s`", jsonObj.get("registrosB").toString()));
           }
 
           // validate the optional field `registrosB` (array)
@@ -381,7 +381,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosC != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosC").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosC` to be an array in the JSON string but got `%s`", jsonObj.get("registrosC").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosC` to be an array in the JSON string but got `%s`", jsonObj.get("registrosC").toString()));
           }
 
           // validate the optional field `registrosC` (array)
@@ -395,7 +395,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosD != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosD").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosD` to be an array in the JSON string but got `%s`", jsonObj.get("registrosD").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosD` to be an array in the JSON string but got `%s`", jsonObj.get("registrosD").toString()));
           }
 
           // validate the optional field `registrosD` (array)
@@ -409,7 +409,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosE != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosE").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosE` to be an array in the JSON string but got `%s`", jsonObj.get("registrosE").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosE` to be an array in the JSON string but got `%s`", jsonObj.get("registrosE").toString()));
           }
 
           // validate the optional field `registrosE` (array)
@@ -423,7 +423,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosF != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosF").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosF` to be an array in the JSON string but got `%s`", jsonObj.get("registrosF").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosF` to be an array in the JSON string but got `%s`", jsonObj.get("registrosF").toString()));
           }
 
           // validate the optional field `registrosF` (array)
@@ -437,7 +437,7 @@ public class HistoricoResultado {
         if (jsonArrayregistrosH != null) {
           // ensure the json data is an array
           if (!jsonObj.get("registrosH").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosH` to be an array in the JSON string but got `%s`", jsonObj.get("registrosH").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `registrosH` to be an array in the JSON string but got `%s`", jsonObj.get("registrosH").toString()));
           }
 
           // validate the optional field `registrosH` (array)

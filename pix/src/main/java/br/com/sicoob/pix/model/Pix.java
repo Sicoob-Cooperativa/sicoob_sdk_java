@@ -309,7 +309,7 @@ public class Pix {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Pix.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Pix` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Pix` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -321,26 +321,26 @@ public class Pix {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("endToEndId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
       }
       if ((jsonObj.get("txid") != null && !jsonObj.get("txid").isJsonNull()) && !jsonObj.get("txid").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `txid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("txid").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `txid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("txid").toString()));
       }
       if (!jsonObj.get("valor").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valor").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valor").toString()));
       }
       if ((jsonObj.get("chave") != null && !jsonObj.get("chave").isJsonNull()) && !jsonObj.get("chave").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `chave` to be a primitive type in the JSON string but got `%s`", jsonObj.get("chave").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `chave` to be a primitive type in the JSON string but got `%s`", jsonObj.get("chave").toString()));
       }
       if ((jsonObj.get("infoPagador") != null && !jsonObj.get("infoPagador").isJsonNull()) && !jsonObj.get("infoPagador").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `infoPagador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("infoPagador").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `infoPagador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("infoPagador").toString()));
       }
       if (jsonObj.get("devolucoes") != null && !jsonObj.get("devolucoes").isJsonNull()) {
         JsonArray jsonArraydevolucoes = jsonObj.getAsJsonArray("devolucoes");
         if (jsonArraydevolucoes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("devolucoes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `devolucoes` to be an array in the JSON string but got `%s`", jsonObj.get("devolucoes").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `devolucoes` to be an array in the JSON string but got `%s`", jsonObj.get("devolucoes").toString()));
           }
 
           // validate the optional field `devolucoes` (array)

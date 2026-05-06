@@ -179,7 +179,7 @@ public class WebhooksConsultados {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!WebhooksConsultados.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `WebhooksConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `WebhooksConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -196,7 +196,7 @@ public class WebhooksConsultados {
       }
       if (jsonObj.get("webhooks") != null) {
         if (!jsonObj.get("webhooks").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `webhooks` to be an array in the JSON string but got `%s`", jsonObj.get("webhooks").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `webhooks` to be an array in the JSON string but got `%s`", jsonObj.get("webhooks").toString()));
         }
         JsonArray jsonArraywebhooks = jsonObj.getAsJsonArray("webhooks");
         // validate the required field `webhooks` (array)

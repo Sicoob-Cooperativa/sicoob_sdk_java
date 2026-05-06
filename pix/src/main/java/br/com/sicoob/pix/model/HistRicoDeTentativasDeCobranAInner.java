@@ -398,7 +398,7 @@ public class HistRicoDeTentativasDeCobranAInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!HistRicoDeTentativasDeCobranAInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistRicoDeTentativasDeCobranAInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `HistRicoDeTentativasDeCobranAInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -410,17 +410,17 @@ public class HistRicoDeTentativasDeCobranAInner {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("tipo").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipo").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipo").toString()));
       }
       // validate the required field `tipo`
       TipoEnum.validateJsonElement(jsonObj.get("tipo"));
       if (!jsonObj.get("status").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
       // validate the required field `status`
       StatusEnum.validateJsonElement(jsonObj.get("status"));
       if (!jsonObj.get("endToEndId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
       }
       // validate the optional field `rejeicao`
       if (jsonObj.get("rejeicao") != null && !jsonObj.get("rejeicao").isJsonNull()) {
@@ -431,7 +431,7 @@ public class HistRicoDeTentativasDeCobranAInner {
         if (jsonArrayatualizacao != null) {
           // ensure the json data is an array
           if (!jsonObj.get("atualizacao").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
           }
 
           // validate the optional field `atualizacao` (array)

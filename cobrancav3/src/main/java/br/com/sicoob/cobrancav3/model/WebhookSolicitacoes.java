@@ -230,7 +230,7 @@ public class WebhookSolicitacoes {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!WebhookSolicitacoes.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `WebhookSolicitacoes` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `WebhookSolicitacoes` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -246,7 +246,7 @@ public class WebhookSolicitacoes {
         if (jsonArraywebhookSolicitacoes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("webhookSolicitacoes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `webhookSolicitacoes` to be an array in the JSON string but got `%s`", jsonObj.get("webhookSolicitacoes").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `webhookSolicitacoes` to be an array in the JSON string but got `%s`", jsonObj.get("webhookSolicitacoes").toString()));
           }
 
           // validate the optional field `webhookSolicitacoes` (array)

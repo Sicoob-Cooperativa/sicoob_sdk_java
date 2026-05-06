@@ -152,7 +152,7 @@ public class CobrancaRecorrenteTentativas {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CobrancaRecorrenteTentativas.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobrancaRecorrenteTentativas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobrancaRecorrenteTentativas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -161,7 +161,7 @@ public class CobrancaRecorrenteTentativas {
         if (jsonArraytentativas != null) {
           // ensure the json data is an array
           if (!jsonObj.get("tentativas").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tentativas` to be an array in the JSON string but got `%s`", jsonObj.get("tentativas").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tentativas` to be an array in the JSON string but got `%s`", jsonObj.get("tentativas").toString()));
           }
 
           // validate the optional field `tentativas` (array)

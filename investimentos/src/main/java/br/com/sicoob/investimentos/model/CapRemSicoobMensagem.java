@@ -167,7 +167,7 @@ public class CapRemSicoobMensagem {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CapRemSicoobMensagem.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CapRemSicoobMensagem` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CapRemSicoobMensagem` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -179,10 +179,10 @@ public class CapRemSicoobMensagem {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("mensagem").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagem` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mensagem").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagem` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mensagem").toString()));
       }
       if (!jsonObj.get("codigo").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `codigo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("codigo").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `codigo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("codigo").toString()));
       }
   }
 

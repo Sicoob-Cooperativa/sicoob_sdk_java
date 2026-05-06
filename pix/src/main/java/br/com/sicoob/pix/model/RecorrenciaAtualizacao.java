@@ -152,7 +152,7 @@ public class RecorrenciaAtualizacao {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RecorrenciaAtualizacao.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaAtualizacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaAtualizacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -165,7 +165,7 @@ public class RecorrenciaAtualizacao {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (jsonObj.get("atualizacao") != null) {
         if (!jsonObj.get("atualizacao").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
         }
         JsonArray jsonArrayatualizacao = jsonObj.getAsJsonArray("atualizacao");
         // validate the required field `atualizacao` (array)

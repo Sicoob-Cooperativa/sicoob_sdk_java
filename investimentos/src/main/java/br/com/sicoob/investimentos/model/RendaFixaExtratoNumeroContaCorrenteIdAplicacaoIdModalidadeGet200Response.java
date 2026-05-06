@@ -187,7 +187,7 @@ public class RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Res
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Response.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -196,7 +196,7 @@ public class RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Res
         if (jsonArraymensagens != null) {
           // ensure the json data is an array
           if (!jsonObj.get("mensagens").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagens` to be an array in the JSON string but got `%s`", jsonObj.get("mensagens").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagens` to be an array in the JSON string but got `%s`", jsonObj.get("mensagens").toString()));
           }
 
           // validate the optional field `mensagens` (array)
@@ -207,7 +207,7 @@ public class RendaFixaExtratoNumeroContaCorrenteIdAplicacaoIdModalidadeGet200Res
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("resultado") != null && !jsonObj.get("resultado").isJsonNull() && !jsonObj.get("resultado").isJsonArray()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `resultado` to be an array in the JSON string but got `%s`", jsonObj.get("resultado").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `resultado` to be an array in the JSON string but got `%s`", jsonObj.get("resultado").toString()));
       }
   }
 

@@ -373,7 +373,7 @@ public class SolicRecCompleta {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!SolicRecCompleta.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `SolicRecCompleta` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `SolicRecCompleta` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -385,23 +385,23 @@ public class SolicRecCompleta {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("idSolicRec").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idSolicRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("idSolicRec").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idSolicRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("idSolicRec").toString()));
       }
       if (!jsonObj.get("idRec").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("idRec").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idRec` to be a primitive type in the JSON string but got `%s`", jsonObj.get("idRec").toString()));
       }
       // validate the required field `calendario`
       InformaEsDeCalendRioDaSolicitaODaRecorrNcia.validateJsonElement(jsonObj.get("calendario"));
       // validate the required field `destinatario`
       DadosBancarios.validateJsonElement(jsonObj.get("destinatario"));
       if (!jsonObj.get("status").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
       // validate the required field `status`
       StatusEnum.validateJsonElement(jsonObj.get("status"));
       if (jsonObj.get("atualizacao") != null) {
         if (!jsonObj.get("atualizacao").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `atualizacao` to be an array in the JSON string but got `%s`", jsonObj.get("atualizacao").toString()));
         }
         JsonArray jsonArrayatualizacao = jsonObj.getAsJsonArray("atualizacao");
         // validate the required field `atualizacao` (array)

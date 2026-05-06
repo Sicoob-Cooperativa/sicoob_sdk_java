@@ -194,7 +194,7 @@ public class DescriODoObjetoDaRecorrNcia {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!DescriODoObjetoDaRecorrNcia.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescriODoObjetoDaRecorrNcia` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescriODoObjetoDaRecorrNcia` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -206,14 +206,14 @@ public class DescriODoObjetoDaRecorrNcia {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("objeto") != null && !jsonObj.get("objeto").isJsonNull()) && !jsonObj.get("objeto").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `objeto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("objeto").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `objeto` to be a primitive type in the JSON string but got `%s`", jsonObj.get("objeto").toString()));
       }
       // validate the optional field `devedor`
       if (jsonObj.get("devedor") != null && !jsonObj.get("devedor").isJsonNull()) {
         DescriODoObjetoDaRecorrNciaDevedor.validateJsonElement(jsonObj.get("devedor"));
       }
       if (!jsonObj.get("contrato").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `contrato` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contrato").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `contrato` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contrato").toString()));
       }
   }
 

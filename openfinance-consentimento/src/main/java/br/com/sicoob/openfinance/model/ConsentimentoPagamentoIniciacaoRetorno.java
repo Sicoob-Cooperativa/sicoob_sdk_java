@@ -516,21 +516,22 @@ public class ConsentimentoPagamentoIniciacaoRetorno {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ConsentimentoPagamentoIniciacaoRetorno.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ConsentimentoPagamentoIniciacaoRetorno` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ConsentimentoPagamentoIniciacaoRetorno` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("accessToken") != null && !jsonObj.get("accessToken").isJsonNull()) && !jsonObj.get("accessToken").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `accessToken` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accessToken").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `accessToken` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accessToken").toString()));
       }
       if ((jsonObj.get("cnpjIniciador") != null && !jsonObj.get("cnpjIniciador").isJsonNull()) && !jsonObj.get("cnpjIniciador").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cnpjIniciador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cnpjIniciador").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cnpjIniciador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cnpjIniciador").toString()));
       }
       if ((jsonObj.get("cnpjInitiator") != null && !jsonObj.get("cnpjInitiator").isJsonNull()) && !jsonObj.get("cnpjInitiator").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cnpjInitiator` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cnpjInitiator").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cnpjInitiator` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cnpjInitiator").toString()));
       }
       if ((jsonObj.get("consentId") != null && !jsonObj.get("consentId").isJsonNull()) && !jsonObj.get("consentId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `consentId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("consentId").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `consentId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("consentId").toString()));
       }
       // validate the optional field `creditor`
       if (jsonObj.get("creditor") != null && !jsonObj.get("creditor").isJsonNull()) {
@@ -553,7 +554,7 @@ public class ConsentimentoPagamentoIniciacaoRetorno {
         Pagamento.validateJsonElement(jsonObj.get("payment"));
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
       // validate the optional field `status`
       if (jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) {

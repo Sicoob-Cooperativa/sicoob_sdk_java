@@ -179,7 +179,7 @@ public class LotesCobVConsultados {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!LotesCobVConsultados.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `LotesCobVConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `LotesCobVConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -194,7 +194,7 @@ public class LotesCobVConsultados {
       ParametrosConsultaLote.validateJsonElement(jsonObj.get("parametros"));
       if (jsonObj.get("lotes") != null) {
         if (!jsonObj.get("lotes").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `lotes` to be an array in the JSON string but got `%s`", jsonObj.get("lotes").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `lotes` to be an array in the JSON string but got `%s`", jsonObj.get("lotes").toString()));
         }
         JsonArray jsonArraylotes = jsonObj.getAsJsonArray("lotes");
         // validate the required field `lotes` (array)

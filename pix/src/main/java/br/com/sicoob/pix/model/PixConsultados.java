@@ -179,7 +179,7 @@ public class PixConsultados {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!PixConsultados.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PixConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PixConsultados` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -197,7 +197,7 @@ public class PixConsultados {
         if (jsonArraypix != null) {
           // ensure the json data is an array
           if (!jsonObj.get("pix").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `pix` to be an array in the JSON string but got `%s`", jsonObj.get("pix").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `pix` to be an array in the JSON string but got `%s`", jsonObj.get("pix").toString()));
           }
 
           // validate the optional field `pix` (array)

@@ -193,7 +193,7 @@ public class PayloadLocationSolicitada {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!PayloadLocationSolicitada.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PayloadLocationSolicitada` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PayloadLocationSolicitada` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -205,7 +205,7 @@ public class PayloadLocationSolicitada {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("tipoCob").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipoCob` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipoCob").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipoCob` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipoCob").toString()));
       }
       // validate the required field `tipoCob`
       TipoCobEnum.validateJsonElement(jsonObj.get("tipoCob"));

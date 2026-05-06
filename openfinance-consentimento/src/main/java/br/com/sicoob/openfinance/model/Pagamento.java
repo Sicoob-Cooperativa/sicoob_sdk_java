@@ -751,7 +751,8 @@ public class Pagamento {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Pagamento.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Pagamento` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Pagamento` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
 
@@ -763,30 +764,30 @@ public class Pagamento {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("amount").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `amount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("amount").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `amount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("amount").toString()));
       }
       if (!jsonObj.get("currency").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
       }
       // validate the required field `currency`
       CurrencyEnum.validateJsonElement(jsonObj.get("currency"));
       if ((jsonObj.get("date") != null && !jsonObj.get("date").isJsonNull()) && !jsonObj.get("date").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date").toString()));
       }
       // validate the required field `details`
       InfoPagamentoDetalhes.validateJsonElement(jsonObj.get("details"));
       if ((jsonObj.get("ibgeTownCode") != null && !jsonObj.get("ibgeTownCode").isJsonNull()) && !jsonObj.get("ibgeTownCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ibgeTownCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ibgeTownCode").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ibgeTownCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ibgeTownCode").toString()));
       }
       if ((jsonObj.get("paymentDescription") != null && !jsonObj.get("paymentDescription").isJsonNull()) && !jsonObj.get("paymentDescription").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `paymentDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentDescription").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `paymentDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentDescription").toString()));
       }
       // validate the optional field `schedule`
       if (jsonObj.get("schedule") != null && !jsonObj.get("schedule").isJsonNull()) {
         Agendamento.validateJsonElement(jsonObj.get("schedule"));
       }
       if (!jsonObj.get("type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
       // validate the required field `type`
       TypeEnum.validateJsonElement(jsonObj.get("type"));

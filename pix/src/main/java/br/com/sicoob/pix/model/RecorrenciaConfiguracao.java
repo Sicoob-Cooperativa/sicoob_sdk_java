@@ -193,7 +193,7 @@ public class RecorrenciaConfiguracao {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RecorrenciaConfiguracao.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaConfiguracao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RecorrenciaConfiguracao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -205,7 +205,7 @@ public class RecorrenciaConfiguracao {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("politicaRetentativa").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `politicaRetentativa` to be a primitive type in the JSON string but got `%s`", jsonObj.get("politicaRetentativa").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `politicaRetentativa` to be a primitive type in the JSON string but got `%s`", jsonObj.get("politicaRetentativa").toString()));
       }
       // validate the required field `politicaRetentativa`
       PoliticaRetentativaEnum.validateJsonElement(jsonObj.get("politicaRetentativa"));

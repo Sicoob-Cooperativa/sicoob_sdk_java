@@ -61,8 +61,8 @@ public class Main {
             // sicoob.setSandboxToken("1301865f-c6bc-38f3-9f49-666dbcfc59c3");
 
             // Exemplo: Consultar Conta Corrente
-            Saldo responseSaldo = sicoob.contaCorrenteSaldoApi.contasNumeroContaCorrenteSaldoGet(12345L);
-            System.out.println("Saldo: " + responseSaldo.getResultado().getSaldoDisponivel());
+            Saldo responseSaldo = sicoob.contaCorrenteSaldoApi.obterSaldo("SEU_CLIENT_ID", 12345L);
+            System.out.println("Saldo: " + responseSaldo.getSaldo());
             
         } catch (Exception e) {
             e.printStackTrace();

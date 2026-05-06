@@ -179,7 +179,8 @@ public class ExtratoResultado {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ExtratoResultado.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ExtratoResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ExtratoResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
 
@@ -194,7 +195,7 @@ public class ExtratoResultado {
       ResumoExtrato.validateJsonElement(jsonObj.get("resumo"));
       if (jsonObj.get("transacoes") != null) {
         if (!jsonObj.get("transacoes").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `transacoes` to be an array in the JSON string but got `%s`", jsonObj.get("transacoes").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `transacoes` to be an array in the JSON string but got `%s`", jsonObj.get("transacoes").toString()));
         }
         JsonArray jsonArraytransacoes = jsonObj.getAsJsonArray("transacoes");
         // validate the required field `transacoes` (array)

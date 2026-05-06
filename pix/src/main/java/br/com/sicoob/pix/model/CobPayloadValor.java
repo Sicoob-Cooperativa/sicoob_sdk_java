@@ -196,7 +196,7 @@ public class CobPayloadValor {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CobPayloadValor.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobPayloadValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobPayloadValor` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -208,7 +208,7 @@ public class CobPayloadValor {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("original").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `original` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original").toString()));
       }
       // validate the optional field `retirada`
       if (jsonObj.get("retirada") != null && !jsonObj.get("retirada").isJsonNull()) {

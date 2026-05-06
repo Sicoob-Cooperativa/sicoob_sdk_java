@@ -420,7 +420,7 @@ public class RetornoPagamento {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RetornoPagamento.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RetornoPagamento` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RetornoPagamento` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -432,27 +432,27 @@ public class RetornoPagamento {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("endToEndId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endToEndId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endToEndId").toString()));
       }
       if ((jsonObj.get("estado") != null && !jsonObj.get("estado").isJsonNull()) && !jsonObj.get("estado").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `estado` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estado").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `estado` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estado").toString()));
       }
       // validate the optional field `estado`
       if (jsonObj.get("estado") != null && !jsonObj.get("estado").isJsonNull()) {
         EstadoEnum.validateJsonElement(jsonObj.get("estado"));
       }
       if ((jsonObj.get("detalheRejeicao") != null && !jsonObj.get("detalheRejeicao").isJsonNull()) && !jsonObj.get("detalheRejeicao").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `detalheRejeicao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("detalheRejeicao").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `detalheRejeicao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("detalheRejeicao").toString()));
       }
       if ((jsonObj.get("descricao") != null && !jsonObj.get("descricao").isJsonNull()) && !jsonObj.get("descricao").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricao").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricao").toString()));
       }
       // validate the required field `origem`
       DadosContaUsuarioOrigem.validateJsonElement(jsonObj.get("origem"));
       // validate the required field `destino`
       DadosContaUsuarioDestino.validateJsonElement(jsonObj.get("destino"));
       if ((jsonObj.get("dataAgendamento") != null && !jsonObj.get("dataAgendamento").isJsonNull()) && !jsonObj.get("dataAgendamento").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `dataAgendamento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dataAgendamento").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `dataAgendamento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dataAgendamento").toString()));
       }
   }
 

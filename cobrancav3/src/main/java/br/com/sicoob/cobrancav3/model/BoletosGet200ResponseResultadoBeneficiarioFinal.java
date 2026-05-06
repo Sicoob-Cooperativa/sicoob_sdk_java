@@ -167,15 +167,15 @@ public class BoletosGet200ResponseResultadoBeneficiarioFinal {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!BoletosGet200ResponseResultadoBeneficiarioFinal.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosGet200ResponseResultadoBeneficiarioFinal` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosGet200ResponseResultadoBeneficiarioFinal` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("numeroCpfCnpj") != null && !jsonObj.get("numeroCpfCnpj").isJsonNull()) && !jsonObj.get("numeroCpfCnpj").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `numeroCpfCnpj` to be a primitive type in the JSON string but got `%s`", jsonObj.get("numeroCpfCnpj").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `numeroCpfCnpj` to be a primitive type in the JSON string but got `%s`", jsonObj.get("numeroCpfCnpj").toString()));
       }
       if ((jsonObj.get("nome") != null && !jsonObj.get("nome").isJsonNull()) && !jsonObj.get("nome").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nome` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nome").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nome` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nome").toString()));
       }
   }
 

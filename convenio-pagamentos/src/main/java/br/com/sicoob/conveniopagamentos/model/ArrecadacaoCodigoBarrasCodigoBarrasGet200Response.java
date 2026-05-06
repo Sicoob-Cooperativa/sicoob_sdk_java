@@ -142,7 +142,7 @@ public class ArrecadacaoCodigoBarrasCodigoBarrasGet200Response {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ArrecadacaoCodigoBarrasCodigoBarrasGet200Response.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ArrecadacaoCodigoBarrasCodigoBarrasGet200Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ArrecadacaoCodigoBarrasCodigoBarrasGet200Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();

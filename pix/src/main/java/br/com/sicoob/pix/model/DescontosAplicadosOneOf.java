@@ -152,7 +152,7 @@ public class DescontosAplicadosOneOf {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!DescontosAplicadosOneOf.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescontosAplicadosOneOf` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DescontosAplicadosOneOf` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -161,7 +161,7 @@ public class DescontosAplicadosOneOf {
         if (jsonArraydescontoDataFixa != null) {
           // ensure the json data is an array
           if (!jsonObj.get("descontoDataFixa").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descontoDataFixa` to be an array in the JSON string but got `%s`", jsonObj.get("descontoDataFixa").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descontoDataFixa` to be an array in the JSON string but got `%s`", jsonObj.get("descontoDataFixa").toString()));
           }
 
           // validate the optional field `descontoDataFixa` (array)

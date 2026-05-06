@@ -338,7 +338,7 @@ public class LotecobvIdPutRequestCobsvInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!LotecobvIdPutRequestCobsvInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `LotecobvIdPutRequestCobsvInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `LotecobvIdPutRequestCobsvInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -360,17 +360,17 @@ public class LotecobvIdPutRequestCobsvInner {
       // validate the required field `valor`
       CobVValor.validateJsonElement(jsonObj.get("valor"));
       if (!jsonObj.get("chave").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `chave` to be a primitive type in the JSON string but got `%s`", jsonObj.get("chave").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `chave` to be a primitive type in the JSON string but got `%s`", jsonObj.get("chave").toString()));
       }
       if ((jsonObj.get("solicitacaoPagador") != null && !jsonObj.get("solicitacaoPagador").isJsonNull()) && !jsonObj.get("solicitacaoPagador").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `solicitacaoPagador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("solicitacaoPagador").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `solicitacaoPagador` to be a primitive type in the JSON string but got `%s`", jsonObj.get("solicitacaoPagador").toString()));
       }
       if (jsonObj.get("infoAdicionais") != null && !jsonObj.get("infoAdicionais").isJsonNull()) {
         JsonArray jsonArrayinfoAdicionais = jsonObj.getAsJsonArray("infoAdicionais");
         if (jsonArrayinfoAdicionais != null) {
           // ensure the json data is an array
           if (!jsonObj.get("infoAdicionais").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `infoAdicionais` to be an array in the JSON string but got `%s`", jsonObj.get("infoAdicionais").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `infoAdicionais` to be an array in the JSON string but got `%s`", jsonObj.get("infoAdicionais").toString()));
           }
 
           // validate the optional field `infoAdicionais` (array)
@@ -380,7 +380,7 @@ public class LotecobvIdPutRequestCobsvInner {
         }
       }
       if (!jsonObj.get("txid").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `txid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("txid").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `txid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("txid").toString()));
       }
   }
 

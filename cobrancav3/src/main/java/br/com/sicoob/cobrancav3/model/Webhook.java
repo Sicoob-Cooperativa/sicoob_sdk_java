@@ -454,7 +454,7 @@ public class Webhook {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Webhook.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Webhook` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Webhook` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -466,22 +466,22 @@ public class Webhook {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("url").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
       }
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
       if (!jsonObj.get("descricaoTipoMovimento").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoTipoMovimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoTipoMovimento").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoTipoMovimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoTipoMovimento").toString()));
       }
       if (!jsonObj.get("descricaoPeriodoMovimento").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoPeriodoMovimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoPeriodoMovimento").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoPeriodoMovimento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoPeriodoMovimento").toString()));
       }
       if (!jsonObj.get("descricaoSituacao").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoSituacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoSituacao").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoSituacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoSituacao").toString()));
       }
       if ((jsonObj.get("descricaoMotivoInativacao") != null && !jsonObj.get("descricaoMotivoInativacao").isJsonNull()) && !jsonObj.get("descricaoMotivoInativacao").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoMotivoInativacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoMotivoInativacao").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoMotivoInativacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoMotivoInativacao").toString()));
       }
   }
 

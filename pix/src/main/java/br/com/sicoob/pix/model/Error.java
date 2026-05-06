@@ -298,18 +298,18 @@ public class Error {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Error.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Error` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Error` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("nomeServico") != null && !jsonObj.get("nomeServico").isJsonNull()) && !jsonObj.get("nomeServico").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nomeServico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nomeServico").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nomeServico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nomeServico").toString()));
       }
       if ((jsonObj.get("mensagemErro") != null && !jsonObj.get("mensagemErro").isJsonNull()) && !jsonObj.get("mensagemErro").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagemErro` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mensagemErro").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagemErro` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mensagemErro").toString()));
       }
       if ((jsonObj.get("detalheErro") != null && !jsonObj.get("detalheErro").isJsonNull()) && !jsonObj.get("detalheErro").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `detalheErro` to be a primitive type in the JSON string but got `%s`", jsonObj.get("detalheErro").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `detalheErro` to be a primitive type in the JSON string but got `%s`", jsonObj.get("detalheErro").toString()));
       }
   }
 

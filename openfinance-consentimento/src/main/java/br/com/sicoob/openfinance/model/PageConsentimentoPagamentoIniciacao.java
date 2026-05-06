@@ -414,7 +414,8 @@ public class PageConsentimentoPagamentoIniciacao {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!PageConsentimentoPagamentoIniciacao.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PageConsentimentoPagamentoIniciacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PageConsentimentoPagamentoIniciacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -423,7 +424,7 @@ public class PageConsentimentoPagamentoIniciacao {
         if (jsonArraycontent != null) {
           // ensure the json data is an array
           if (!jsonObj.get("content").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `content` to be an array in the JSON string but got `%s`", jsonObj.get("content").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `content` to be an array in the JSON string but got `%s`", jsonObj.get("content").toString()));
           }
 
           // validate the optional field `content` (array)

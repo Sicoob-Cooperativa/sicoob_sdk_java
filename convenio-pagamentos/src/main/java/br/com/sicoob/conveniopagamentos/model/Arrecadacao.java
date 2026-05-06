@@ -351,7 +351,7 @@ public class Arrecadacao {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Arrecadacao.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Arrecadacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Arrecadacao` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -363,7 +363,7 @@ public class Arrecadacao {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("autenticacao") != null && !jsonObj.get("autenticacao").isJsonNull()) && !jsonObj.get("autenticacao").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `autenticacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("autenticacao").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `autenticacao` to be a primitive type in the JSON string but got `%s`", jsonObj.get("autenticacao").toString()));
       }
   }
 

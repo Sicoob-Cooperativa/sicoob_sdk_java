@@ -179,7 +179,8 @@ public class Extrato {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Extrato.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Extrato` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Extrato` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -188,7 +189,7 @@ public class Extrato {
         if (jsonArraymensagens != null) {
           // ensure the json data is an array
           if (!jsonObj.get("mensagens").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagens` to be an array in the JSON string but got `%s`", jsonObj.get("mensagens").toString()));
+            // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mensagens` to be an array in the JSON string but got `%s`", jsonObj.get("mensagens").toString()));
           }
 
           // validate the optional field `mensagens` (array)

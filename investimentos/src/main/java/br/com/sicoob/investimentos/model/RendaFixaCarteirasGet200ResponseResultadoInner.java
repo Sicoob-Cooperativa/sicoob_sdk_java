@@ -220,7 +220,7 @@ public class RendaFixaCarteirasGet200ResponseResultadoInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!RendaFixaCarteirasGet200ResponseResultadoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RendaFixaCarteirasGet200ResponseResultadoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `RendaFixaCarteirasGet200ResponseResultadoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -232,7 +232,7 @@ public class RendaFixaCarteirasGet200ResponseResultadoInner {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("carteira").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carteira` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carteira").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carteira` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carteira").toString()));
       }
   }
 

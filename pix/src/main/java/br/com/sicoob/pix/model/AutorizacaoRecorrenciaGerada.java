@@ -220,12 +220,12 @@ public class AutorizacaoRecorrenciaGerada {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!AutorizacaoRecorrenciaGerada.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `AutorizacaoRecorrenciaGerada` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `AutorizacaoRecorrenciaGerada` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("valorMaximoPagamento") != null && !jsonObj.get("valorMaximoPagamento").isJsonNull()) && !jsonObj.get("valorMaximoPagamento").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorMaximoPagamento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorMaximoPagamento").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valorMaximoPagamento` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valorMaximoPagamento").toString()));
       }
   }
 

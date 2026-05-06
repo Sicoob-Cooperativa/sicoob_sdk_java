@@ -179,7 +179,7 @@ public class CobsVConsultadas {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!CobsVConsultadas.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobsVConsultadas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CobsVConsultadas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -194,7 +194,7 @@ public class CobsVConsultadas {
       ParametrosConsultaCob.validateJsonElement(jsonObj.get("parametros"));
       if (jsonObj.get("cobs") != null) {
         if (!jsonObj.get("cobs").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cobs` to be an array in the JSON string but got `%s`", jsonObj.get("cobs").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cobs` to be an array in the JSON string but got `%s`", jsonObj.get("cobs").toString()));
         }
         JsonArray jsonArraycobs = jsonObj.getAsJsonArray("cobs");
         // validate the required field `cobs` (array)

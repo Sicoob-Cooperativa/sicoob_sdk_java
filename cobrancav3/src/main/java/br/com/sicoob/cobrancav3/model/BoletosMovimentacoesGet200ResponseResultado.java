@@ -229,7 +229,7 @@ public class BoletosMovimentacoesGet200ResponseResultado {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!BoletosMovimentacoesGet200ResponseResultado.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosMovimentacoesGet200ResponseResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosMovimentacoesGet200ResponseResultado` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -244,7 +244,7 @@ public class BoletosMovimentacoesGet200ResponseResultado {
       if (jsonObj.get("idArquivos") == null) {
         throw new IllegalArgumentException("Expected the field `linkedContent` to be an array in the JSON string but got `null`");
       } else if (!jsonObj.get("idArquivos").isJsonArray()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idArquivos` to be an array in the JSON string but got `%s`", jsonObj.get("idArquivos").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `idArquivos` to be an array in the JSON string but got `%s`", jsonObj.get("idArquivos").toString()));
       }
   }
 

@@ -143,6 +143,20 @@ public class JSON {
     @SuppressWarnings("unchecked")
     public static <T> T deserialize(String body, Type returnType) {
         try {
+            try {
+                com.google.gson.JsonElement jsonElement = com.google.gson.JsonParser.parseString(body);
+                if (jsonElement.isJsonObject() && jsonElement.getAsJsonObject().has("resultado") 
+                    && !returnType.getTypeName().contains("Resposta") 
+                    && !returnType.getTypeName().contains("Response")) {
+                    com.google.gson.JsonElement resultado = jsonElement.getAsJsonObject().get("resultado");
+                    if (!resultado.isJsonNull()) {
+                        body = resultado.toString();
+                    }
+                }
+            } catch (Exception e) {
+                // Ignore parse errors here, let gson handle it
+            }
+
             if (isLenientOnJson) {
                 JsonReader jsonReader = new JsonReader(new StringReader(body));
                 // see https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/stream/JsonReader.html#setLenient(boolean)
@@ -173,13 +187,35 @@ public class JSON {
     @SuppressWarnings("unchecked")
     public static <T> T deserialize(InputStream inputStream, Type returnType) throws IOException {
         try (InputStreamReader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
-        if (isLenientOnJson) {
-            // see https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/stream/JsonReader.html#setLenient(boolean)
-            JsonReader jsonReader = new JsonReader(reader);
-            jsonReader.setLenient(true);
-            return gson.fromJson(jsonReader, returnType);
+            String body = "";
+            try {
+                StringBuilder sb = new StringBuilder();
+                char[] buffer = new char[1024];
+                int len;
+                while ((len = reader.read(buffer)) != -1) {
+                    sb.append(buffer, 0, len);
+                }
+                body = sb.toString();
+                
+                com.google.gson.JsonElement jsonElement = com.google.gson.JsonParser.parseString(body);
+                if (jsonElement.isJsonObject() && jsonElement.getAsJsonObject().has("resultado") 
+                    && !returnType.getTypeName().contains("Resposta") 
+                    && !returnType.getTypeName().contains("Response")) {
+                    com.google.gson.JsonElement resultado = jsonElement.getAsJsonObject().get("resultado");
+                    if (!resultado.isJsonNull()) {
+                        body = resultado.toString();
+                    }
+                }
+            } catch (Exception e) {
+                // Ignore parse errors
+            }
+
+            if (isLenientOnJson) {
+                JsonReader jsonReader = new JsonReader(new StringReader(body));
+                jsonReader.setLenient(true);
+                return gson.fromJson(jsonReader, returnType);
             } else {
-                return gson.fromJson(reader, returnType);
+                return gson.fromJson(body, returnType);
             }
         }
     }

@@ -273,7 +273,7 @@ public class Troco {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!Troco.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Troco` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `Troco` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -285,15 +285,15 @@ public class Troco {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("valor").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valor").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `valor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("valor").toString()));
       }
       if (!jsonObj.get("modalidadeAgente").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `modalidadeAgente` to be a primitive type in the JSON string but got `%s`", jsonObj.get("modalidadeAgente").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `modalidadeAgente` to be a primitive type in the JSON string but got `%s`", jsonObj.get("modalidadeAgente").toString()));
       }
       // validate the required field `modalidadeAgente`
       ModalidadeAgenteEnum.validateJsonElement(jsonObj.get("modalidadeAgente"));
       if (!jsonObj.get("prestadorDoServicoDeSaque").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `prestadorDoServicoDeSaque` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prestadorDoServicoDeSaque").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `prestadorDoServicoDeSaque` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prestadorDoServicoDeSaque").toString()));
       }
   }
 

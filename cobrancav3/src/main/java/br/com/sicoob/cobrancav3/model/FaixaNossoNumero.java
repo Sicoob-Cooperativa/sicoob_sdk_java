@@ -297,7 +297,7 @@ public class FaixaNossoNumero {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!FaixaNossoNumero.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FaixaNossoNumero` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FaixaNossoNumero` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -309,7 +309,7 @@ public class FaixaNossoNumero {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("nomeCliente").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nomeCliente` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nomeCliente").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nomeCliente` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nomeCliente").toString()));
       }
   }
 

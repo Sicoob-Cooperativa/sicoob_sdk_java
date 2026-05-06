@@ -179,7 +179,7 @@ public class PayloadLocationConsultadas {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!PayloadLocationConsultadas.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PayloadLocationConsultadas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PayloadLocationConsultadas` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -194,7 +194,7 @@ public class PayloadLocationConsultadas {
       ParametrosConsultaPayloadLocation.validateJsonElement(jsonObj.get("parametros"));
       if (jsonObj.get("loc") != null) {
         if (!jsonObj.get("loc").isJsonArray()) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `loc` to be an array in the JSON string but got `%s`", jsonObj.get("loc").toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `loc` to be an array in the JSON string but got `%s`", jsonObj.get("loc").toString()));
         }
         JsonArray jsonArrayloc = jsonObj.getAsJsonArray("loc");
         // validate the required field `loc` (array)

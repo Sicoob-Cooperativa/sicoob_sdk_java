@@ -194,7 +194,7 @@ public class BoletosGet200ResponseResultadoListaHistoricoInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!BoletosGet200ResponseResultadoListaHistoricoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosGet200ResponseResultadoListaHistoricoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `BoletosGet200ResponseResultadoListaHistoricoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
@@ -206,10 +206,10 @@ public class BoletosGet200ResponseResultadoListaHistoricoInner {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("tipoHistorico").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipoHistorico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipoHistorico").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `tipoHistorico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tipoHistorico").toString()));
       }
       if (!jsonObj.get("descricaoHistorico").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoHistorico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoHistorico").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `descricaoHistorico` to be a primitive type in the JSON string but got `%s`", jsonObj.get("descricaoHistorico").toString()));
       }
   }
 

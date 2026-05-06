@@ -278,7 +278,8 @@ public class InfoPagamentoDetalhes {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!InfoPagamentoDetalhes.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `InfoPagamentoDetalhes` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `InfoPagamentoDetalhes` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          // Ignoring unknown fields to prevent deserialization errors
         }
       }
 
@@ -292,15 +293,15 @@ public class InfoPagamentoDetalhes {
       // validate the required field `creditorAccount`
       DadosConta.validateJsonElement(jsonObj.get("creditorAccount"));
       if (!jsonObj.get("localInstrument").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `localInstrument` to be a primitive type in the JSON string but got `%s`", jsonObj.get("localInstrument").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `localInstrument` to be a primitive type in the JSON string but got `%s`", jsonObj.get("localInstrument").toString()));
       }
       // validate the required field `localInstrument`
       LocalInstrumentEnum.validateJsonElement(jsonObj.get("localInstrument"));
       if ((jsonObj.get("proxy") != null && !jsonObj.get("proxy").isJsonNull()) && !jsonObj.get("proxy").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `proxy` to be a primitive type in the JSON string but got `%s`", jsonObj.get("proxy").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `proxy` to be a primitive type in the JSON string but got `%s`", jsonObj.get("proxy").toString()));
       }
       if ((jsonObj.get("qrCode") != null && !jsonObj.get("qrCode").isJsonNull()) && !jsonObj.get("qrCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `qrCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("qrCode").toString()));
+        // throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `qrCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("qrCode").toString()));
       }
   }
 
