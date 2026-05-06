@@ -339,18 +339,18 @@ public class PageConsentimentoPagamentoIniciacao {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    PageConsentimentoPagamentoIniciacao page«ConsentimentoPagamentoIniciacao» = (PageConsentimentoPagamentoIniciacao) o;
-    return Objects.equals(this.content, page«ConsentimentoPagamentoIniciacao».content) &&
-        Objects.equals(this.empty, page«ConsentimentoPagamentoIniciacao».empty) &&
-        Objects.equals(this.first, page«ConsentimentoPagamentoIniciacao».first) &&
-        Objects.equals(this.last, page«ConsentimentoPagamentoIniciacao».last) &&
-        Objects.equals(this.number, page«ConsentimentoPagamentoIniciacao».number) &&
-        Objects.equals(this.numberOfElements, page«ConsentimentoPagamentoIniciacao».numberOfElements) &&
-        Objects.equals(this.pageable, page«ConsentimentoPagamentoIniciacao».pageable) &&
-        Objects.equals(this.size, page«ConsentimentoPagamentoIniciacao».size) &&
-        Objects.equals(this.sort, page«ConsentimentoPagamentoIniciacao».sort) &&
-        Objects.equals(this.totalElements, page«ConsentimentoPagamentoIniciacao».totalElements) &&
-        Objects.equals(this.totalPages, page«ConsentimentoPagamentoIniciacao».totalPages);
+    PageConsentimentoPagamentoIniciacao pageConsentimentoPagamentoIniciacao = (PageConsentimentoPagamentoIniciacao) o;
+    return Objects.equals(this.content, pageConsentimentoPagamentoIniciacao.content) &&
+        Objects.equals(this.empty, pageConsentimentoPagamentoIniciacao.empty) &&
+        Objects.equals(this.first, pageConsentimentoPagamentoIniciacao.first) &&
+        Objects.equals(this.last, pageConsentimentoPagamentoIniciacao.last) &&
+        Objects.equals(this.number, pageConsentimentoPagamentoIniciacao.number) &&
+        Objects.equals(this.numberOfElements, pageConsentimentoPagamentoIniciacao.numberOfElements) &&
+        Objects.equals(this.pageable, pageConsentimentoPagamentoIniciacao.pageable) &&
+        Objects.equals(this.size, pageConsentimentoPagamentoIniciacao.size) &&
+        Objects.equals(this.sort, pageConsentimentoPagamentoIniciacao.sort) &&
+        Objects.equals(this.totalElements, pageConsentimentoPagamentoIniciacao.totalElements) &&
+        Objects.equals(this.totalPages, pageConsentimentoPagamentoIniciacao.totalPages);
   }
 
   @Override

@@ -29,13 +29,13 @@ public class SicoobClient {
     public br.com.sicoob.pix.api.PixApi pixApi;
     public br.com.sicoob.pix.api.CobApi pixCobApi;
     public br.com.sicoob.pagamentosv3.api.PagamentoApi pagamentosV3Api;
-    public br.com.sicoob.cobrancav3.api.BoletosApi cobrancaV3BoletosApi;
+    public br.com.sicoob.cobrancav3.api.BoletoApi cobrancaV3BoletosApi;
     public br.com.sicoob.contacorrente.api.ExtratoApi contaCorrenteExtratoApi;
     public br.com.sicoob.contacorrente.api.SaldoApi contaCorrenteSaldoApi;
     public br.com.sicoob.conveniopagamentos.api.ArrecadaoApi arrecadacaoApi;
     public br.com.sicoob.investimentos.api.InvestimentosApi investimentosApi;
     public br.com.sicoob.openfinance.api.IniciadorDeTransaesDePagamentoApi openFinanceConsentsApi;
-    public br.com.sicoob.pagamentospix.api.APIDePagamentosPIXApi pagamentosPixApi;
+    public br.com.sicoob.pagamentospix.api.ApiDePagamentosPixApi pagamentosPixApi;
     public br.com.sicoob.poupanca.api.SaldoApi poupancaSaldoApi;
     public br.com.sicoob.spbtransferencias.api.TedsApi spbTedsApi;
 
@@ -89,7 +89,7 @@ public class SicoobClient {
         this.cobrancaV3Client = new br.com.sicoob.cobrancav3.ApiClient();
         this.cobrancaV3Client.setBasePath(baseUrl + "/cobranca-bancaria/v3");
         this.cobrancaV3Client.setHttpClient(okHttpClient);
-        this.cobrancaV3BoletosApi = new br.com.sicoob.cobrancav3.api.BoletosApi(this.cobrancaV3Client);
+        this.cobrancaV3BoletosApi = new br.com.sicoob.cobrancav3.api.BoletoApi(this.cobrancaV3Client);
 
         // 5. Conta Corrente
         this.contaCorrenteClient = new br.com.sicoob.contacorrente.ApiClient();
@@ -120,7 +120,7 @@ public class SicoobClient {
         this.pagamentosPixClient = new br.com.sicoob.pagamentospix.ApiClient();
         this.pagamentosPixClient.setBasePath(baseUrl + "/pix-pagamentos/v2");
         this.pagamentosPixClient.setHttpClient(okHttpClient);
-        this.pagamentosPixApi = new br.com.sicoob.pagamentospix.api.APIDePagamentosPIXApi(this.pagamentosPixClient);
+        this.pagamentosPixApi = new br.com.sicoob.pagamentospix.api.ApiDePagamentosPixApi(this.pagamentosPixClient);
 
         // 10. Poupança
         this.poupancaClient = new br.com.sicoob.poupanca.ApiClient();
@@ -172,7 +172,7 @@ public class SicoobClient {
 
                         try {
                             // Tenta renovar o token
-                            String newToken = SicoobClient.this.authenticate();
+                            String newToken = SicoobClient.this.authenticate(SicoobClient.this.currentScopes);
                             
                             // Clona a requisição falha e atualiza o header de Authorization com o novo token
                             return response.request().newBuilder()
