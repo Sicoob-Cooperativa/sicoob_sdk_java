@@ -78,13 +78,20 @@ Ao receber um erro `401 Unauthorized` de qualquer API de negócio, o Client inte
 
 ## Instalação (Maven/Gradle)
 
-Atualmente cada pasta é um sub-módulo Maven e Gradle isolado. Você deve publicar os sub-projetos na sua rede local (usando `mvn install` dentro das pastas) ou unificar os artefatos `src/main/java` no seu build nativo. 
+O SDK está disponível no Maven Central. Para utilizá-lo, basta adicionar a dependência do módulo `sicoob-sdk-core` no seu arquivo `pom.xml` (Maven) ou `build.gradle` (Gradle). O módulo `core` já importa automaticamente todas as APIs de negócio.
 
-Para baixar e compilar cada submódulo individualmente:
-```bash
-cd auth && mvn clean install -DskipTests
-cd ../pix && mvn clean install -DskipTests
-...
+### Maven (`pom.xml`)
+```xml
+<dependency>
+    <groupId>io.github.sicoob-cooperativa</groupId>
+    <artifactId>sicoob-sdk-core</artifactId>
+    <version>2.0.0</version>
+</dependency>
+```
+
+### Gradle (`build.gradle`)
+```groovy
+implementation 'io.github.sicoob-cooperativa:sicoob-sdk-core:2.0.0'
 ```
 
 
