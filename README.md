@@ -85,13 +85,13 @@ O SDK está disponível no Maven Central. Para utilizá-lo, basta adicionar a de
 <dependency>
     <groupId>io.github.sicoob-cooperativa</groupId>
     <artifactId>sicoob-sdk-core</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
 </dependency>
 ```
 
 ### Gradle (`build.gradle`)
 ```groovy
-implementation 'io.github.sicoob-cooperativa:sicoob-sdk-core:2.0.0'
+implementation 'io.github.sicoob-cooperativa:sicoob-sdk-core:2.0.1'
 ```
 
 
