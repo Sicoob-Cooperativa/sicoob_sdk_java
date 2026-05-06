@@ -66,5 +66,10 @@
       <artifactId>sicoob-sdk-spb-transferencias</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>io.sentry</groupId>
+      <artifactId>sentry</artifactId>
+      <version>6.31.0</version>
+    </dependency>
   </dependencies>
 </project>

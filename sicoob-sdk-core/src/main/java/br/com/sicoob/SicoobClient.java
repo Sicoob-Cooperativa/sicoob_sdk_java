@@ -61,6 +61,7 @@ public class SicoobClient {
         this.pfxPassword = pfxPassword;
         this.isSandbox = isSandbox;
 
+
         OkHttpClient okHttpClient = buildOkHttpClient(pfxPath, pfxPassword);
 
         String baseUrl = this.isSandbox ? "https://sandbox.sicoob.com.br/sicoob/sandbox" : "https://api.sicoob.com.br";

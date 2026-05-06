@@ -3,3 +3,4 @@
 *.txt
 target/
 *.jar
+*.bak
